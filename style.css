@@ -45,10 +45,26 @@ h1,h2,h3,h4 {
     font-weight: 700;
 }
 
+button {
+    background: var(--primary);
+    color: var(--white);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+button:hover {
+    background: var(--dark-color);
+}
+
 .container {
     width: 920px;
     margin: auto;
 }
+
 /************* nav ***********/
 nav {
     margin-top: 27px;
@@ -66,4 +82,76 @@ nav ul li a {
     font-size: 20px;
     color: var(--dark-color);
     margin-left: 33px;
+}
+
+/********** header ********/
+header {
+    padding: 170px 0 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div:first-child {
+    flex: 0 0 70%;
+}
+
+header div:last-child {
+    flex: 0 0 25%;
+}
+
+header img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+header h1 {
+    font-size: 44px;
+}
+
+header p {
+    padding: 20px 0 40px 0;
+}
+
+/********** posts ********/
+.recent-posts {
+    padding: 35px 0;
+    background: var(--bg);
+}
+
+.recent-posts .row:first-child {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.recent-posts .row:first-child p {
+    font-size: 22px;
+}
+
+.recent-posts .row:first-child a {
+    color: var(--secondary);
+}
+
+.recent-posts .row:first-child a:hover {
+    color: var(--primary);
+}
+
+.recent-posts .row:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-posts .post {
+    background: var(--white);
+    flex: 0 0 48%;
+    padding: 25px;
+}
+
+.recent-posts .post h3 {
+    font-size: 26px;
+}
+
+.recent-posts .post h3 + p {
+    margin: 15px 0;
 }
