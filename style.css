@@ -163,7 +163,7 @@ header p {
 
 .featured-works article.works {
     display: flex;
-    border-bottom: 1px solid #a09b9b;
+    border-bottom: 1px solid #aea9a9;
     padding-bottom: 15px;
     margin-bottom: 25px;
 }
@@ -232,4 +232,80 @@ footer i {
 
 footer i:hover {
     color: var(--primary);
+}
+
+/************** blog *******************/
+.blog h1, .featured-works.works h1 {
+    font-size: 44px;
+    margin-bottom: 55px;
+}
+
+.blog .post {
+    border-bottom:1px solid #aea9a9;
+    padding: 30px 0;
+}
+
+.blog .post:last-child {
+    margin-bottom: 80px;
+}
+
+.blog .post h2 {
+    font-size: 30px;
+}
+
+.blog .post .meta {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.blog .post .meta span:nth-child(1) {
+    background: var(--dark-color);
+    color: var(--white);
+    border-radius: 16px;
+    display: inline-block;
+    padding: 3px 16px;
+    font-weight: 700;
+}
+
+.blog .post .meta span:nth-child(2) {
+    color: #8695a4;
+}
+
+.hamburger {
+    display: none;
+}
+
+/********* responsive *************/
+
+@media(max-width: 767px) {
+    .container {
+        width: 100%;
+        margin: auto;
+        padding: 0 10px;
+    }
+    .hamburger {
+        display: block;
+    }
+    nav ul {
+        display: none;
+    }
+    header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    header.container {
+        padding: 40px 0 80px 0;
+    }
+    .recent-posts .row:last-child {
+        flex-direction: column;
+    }
+    .recent-posts .post {
+        margin-bottom: 30px;
+    }
+    .featured-works article.works {
+        flex-direction: column;
+    }
+    body {
+        font-size: 95%;
+    }
 }
