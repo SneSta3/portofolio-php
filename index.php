@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/717cb88a69.js"crossorigin="anonymus"></script>
 </head>
 <body>
     <nav>
@@ -89,7 +90,16 @@
             </div>
         </article>
     </section>
-    
+
+    <footer>
+        <ul>
+            <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+        <p>&copy; 2022. Snjeza & WW ekipa</p>
+    </footer>
     
 </body>
 </html>

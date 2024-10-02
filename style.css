@@ -210,3 +210,26 @@ header p {
     display: inline-block;
     margin-left: 26px;
 }
+
+/*************** footer **************/
+footer {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+footer i {
+    color: var(--dark-color);
+    font-size: 2rem;
+    margin: 0 10px;
+    transition: var(--transition);
+}
+
+footer i:hover {
+    color: var(--primary);
+}
