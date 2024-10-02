@@ -11,7 +11,7 @@
 
 
 }
-/********* basic style ***********/
+/***************** basic style ****************/
 
 * {
     margin: 0;
@@ -65,7 +65,7 @@ button:hover {
     margin: auto;
 }
 
-/************* nav ***********/
+/******************** nav *******************/
 nav {
     margin-top: 27px;
     margin-right: 60px;
@@ -84,7 +84,7 @@ nav ul li a {
     margin-left: 33px;
 }
 
-/********** header ********/
+/***************** header *****************/
 header {
     padding: 170px 0 70px 0;
     display: flex;
@@ -113,7 +113,7 @@ header p {
     padding: 20px 0 40px 0;
 }
 
-/********** posts ********/
+/***************** posts ***************/
 .recent-posts {
     padding: 35px 0;
     background: var(--bg);
@@ -154,4 +154,59 @@ header p {
 
 .recent-posts .post h3 + p {
     margin: 15px 0;
+}
+
+/***************** works ****************/
+.featured-works {
+    padding: 50px 0;
+}
+
+.featured-works article.works {
+    display: flex;
+    border-bottom: 1px solid #a09b9b;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.featured-works .works img {
+    width: 100%;
+}
+
+.featured-works .works .img {
+    flex: 0 0 25%;
+}
+
+.featured-works .works .text{
+    flex: 0 0 75%;
+    padding-left: 18px;
+}
+
+.featured-works h3 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.featured-works h2 {
+    font-size: 30px;
+}
+
+.featured-works .works .text .meta {
+    margin-bottom: 20px;
+}
+
+.featured-works .works .text .meta p:first-child {
+    background: var(--dark-color);
+    color: var(--white);
+    border-radius: 16px;
+    display: inline-block;
+    padding: 3px 16px;
+    font-weight: 700;
+}
+
+.featured-works .works .text .meta p:last-child {
+    color: #8695a4;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 26px;
 }
