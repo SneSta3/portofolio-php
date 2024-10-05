@@ -1,0 +1,21 @@
+//////////
+ID:1
+Slika: img/works1.png
+Naslov: Designing Dashboards
+Datum: 2020
+Kategorija: Dashboard
+Tekst: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi harum ipsum corporis, iste facere maxime vero ratione consequatur. Beatae iure, necessitatibus quibusdam temporibus ducimus esse.
+//////////
+ID:2
+Slika: img/works2.png
+Naslov: Vibrant Portraits of 2020
+Datum: 2018
+Kategorija: Illustration
+Tekst: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi harum ipsum corporis, iste facere maxime vero ratione consequatur. Beatae iure, necessitatibus quibusdam temporibus ducimus esse.
+//////////
+ID:3
+Slika: img/works3.png
+Naslov: 36 Days of Malayalam type
+Datum: 2018
+Kategorija: Typography
+Tekst: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi harum ipsum corporis, iste facere maxime vero ratione consequatur. Beatae iure, necessitatibus quibusdam temporibus ducimus esse.
