@@ -1,47 +1,21 @@
 <?php include('partials/header.php'); ?>
 
+<?php 
+//normalizacija_blog_podataka(ocitaj_posts_text_file());
+//izlistaj_sve_postove();
+$svi_postovi = izlistaj_sve_postove();
+?>
+<?php foreach($svi_postovi as $post): ?>
 <section class="container blog">
-    <h1>Blog</h1>
     <article class="post">
-         <a href=""><h2>UI Interactions of the week</h2></a>
+         <a href=""><h2><?php echo $post['naslov']; ?></h2></a>
          <div class="meta">
-            <span>12 Feb 2019</span> &nbsp;&nbsp;|&nbsp;&nbsp;
-            <span>UX, Web design</span>
+            <span><?php echo $post['datum']; ?></span> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <span><?php echo $post['kategorija']; ?></span>
          </div>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti hic nostrum eaque repellendus error suscipit et molestiae! Consequatur harum facilis commodi, deleniti vitae reprehenderit.</p>
-    </article>
-    <article class="post">
-         <a href=""><h2>Web design week</h2></a>
-         <div class="meta">
-            <span>12 Feb 2019</span> &nbsp;&nbsp;|&nbsp;&nbsp;
-            <span>UX, Web design</span>
-         </div>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti hic nostrum eaque repellendus error suscipit et molestiae! Consequatur harum facilis commodi, deleniti vitae reprehenderit.</p>
-    </article>
-    <article class="post">
-         <a href=""><h2>UI Conference</h2></a>
-         <div class="meta">
-            <span>12 Feb 2019</span> &nbsp;&nbsp;|&nbsp;&nbsp;
-            <span>UX, Web design</span>
-         </div>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti hic nostrum eaque repellendus error suscipit et molestiae! Consequatur harum facilis commodi, deleniti vitae reprehenderit.</p>
-    </article>
-    <article class="post">
-         <a href=""><h2>Web camp summit 2019</h2></a>
-         <div class="meta">
-            <span>12 Feb 2019</span> &nbsp;&nbsp;|&nbsp;&nbsp;
-            <span>UX, Web design</span>
-         </div>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti hic nostrum eaque repellendus error suscipit et molestiae! Consequatur harum facilis commodi, deleniti vitae reprehenderit.</p>
-    </article>
-    <article class="post">
-         <a href=""><h2>React week</h2></a>
-         <div class="meta">
-            <span>12 Feb 2019</span> &nbsp;&nbsp;|&nbsp;&nbsp;
-            <span>UX, Web design</span>
-         </div>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti hic nostrum eaque repellendus error suscipit et molestiae! Consequatur harum facilis commodi, deleniti vitae reprehenderit.</p>
+         <p><?php echo $post['tekst']; ?></p>
     </article>
 </section>
+<?php endforeach; ?>
 
 <?php include('partials/footer.php'); ?> 

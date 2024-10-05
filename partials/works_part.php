@@ -9,8 +9,7 @@ $svi_projekti = izlistaj_sve_projekte();
 <?php foreach($svi_projekti as $projekat) : ?>
 <article class="works">
     <div class="img">
-        <img src="<?php echo $projekat['slika']; ?>" alt="<?php echo $projekat['naslov']; ?>">
-        <h2><?php echo $projekat['naslov']; ?></h2>
+        <img src="<?php echo $projekat['slika']; ?>" alt="">
     </div>
     <div class="text">
         <h2><?php echo $projekat['naslov']; ?></h2>

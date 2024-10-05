@@ -1,0 +1,30 @@
+//////////
+ID:1
+Naslov: UI Interactions of the week
+Datum: 12 Feb 2019
+Kategorija: Design, Paterns
+Tekst: Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti hic nostrum eaque repellendus error suscipit et molestiae! Consequatur harum facilis commodi, deleniti vitae reprehenderit.
+//////////
+ID:2
+Naslov: Web design week
+Datum: 12 Feb 2019
+Kategorija: Figma, Icon design
+Tekst: Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti hic nostrum eaque repellendus error suscipit et molestiae! Consequatur harum facilis commodi, deleniti vitae reprehenderit.
+//////////
+ID:3
+Naslov: UI Conference
+Datum: 12 Feb 2019
+Kategorija: UX, Web design
+Tekst: Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti hic nostrum eaque repellendus error suscipit et molestiae! Consequatur harum facilis commodi, deleniti vitae reprehenderit.
+//////////
+ID:4
+Naslov: Web camp summit 2019
+Datum: 202012 Feb 2019
+Kategorija: UX, Web design
+Tekst: Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti hic nostrum eaque repellendus error suscipit et molestiae! Consequatur harum facilis commodi, deleniti vitae reprehenderit.
+//////////
+ID:5
+Naslov: React week
+Datum: 12 Feb 2019
+Kategorija: UX, Web design
+Tekst: Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti hic nostrum eaque repellendus error suscipit et molestiae! Consequatur harum facilis commodi, deleniti vitae reprehenderit.

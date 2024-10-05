@@ -72,3 +72,66 @@ function izlistaj_sve_projekte() {
     //debagovanje($works_podaci);
     return $works_podaci;
 }
+
+// blog listing
+// funkcija za citanje fajla posts.txt
+function ocitaj_posts_text_file() {
+    return file_get_contents('baza/posts.txt');
+
+}    
+
+function normalizacija_blog_podataka($blog_podaci) {
+    $prelomi_blog = explode('//////////', $blog_podaci);
+    //debagovanje($prelomi_blog);
+    unset($prelomi_blog[0]);
+    //debagovanje($prelomi_blog);
+    $novi_red_formatiran = [];
+    foreach ($prelomi_blog as $novi_red) {
+        //debagovanje($novi_red);
+        $novi_red_razbijen = explode(PHP_EOL, $novi_red);
+        //debagovanje($novi_red_razbijen);
+        $novi_red_razbijen = array_filter($novi_red_razbijen);
+        //debagovanje($novi_red_razbijen);
+        //debagovanje(normalizacija_blog_redova($novi_red_razbijen[1]));
+        //debagovanje(normalizacija_blog_redova($novi_red_razbijen[2]));
+        //debagovanje(normalizacija_blog_redova($novi_red_razbijen[3]));
+        //debagovanje(normalizacija_blog_redova($novi_red_razbijen[4]));
+        //debagovanje(normalizacija_blog_redova($novi_red_razbijen[5]));
+        $blog_id = normalizacija_blog_redova($novi_red_razbijen[1]);
+        $blog_naslov = normalizacija_blog_redova($novi_red_razbijen[2]);
+        $blog_datum = normalizacija_blog_redova($novi_red_razbijen[3]);
+        $blog_kategorija = normalizacija_blog_redova($novi_red_razbijen[4]);
+        $blog_tekst = normalizacija_blog_redova($novi_red_razbijen[5]);
+        //debagovanje($blog_id);
+        //debagovanje($blog_naslov);
+        //debagovanje($blog_datum);
+        //debagovanje($blog_kategorija);  
+        //debagovanje($blog_tekst);
+        $red_podaci = [
+            'id' => $blog_id,
+            'naslov' => $blog_naslov,
+            'datum'=> $blog_datum,  
+            'kategorija'=> $blog_kategorija,
+            'tekst'=> $blog_tekst
+        ];
+        //debagovanje($red_podaci);
+        $novi_red_formatiran[] = $red_podaci;   
+     }
+     //debagovanje($novi_red_formatiran);
+     return $novi_red_formatiran;
+}
+
+
+function normalizacija_blog_redova($blog_podaci_red) {
+    $normalizuj_podatke = ['ID:', 'Naslov:', 'Datum:', 'Kategorija:', 'Tekst:'];
+    $red = str_replace($normalizuj_podatke, '', $blog_podaci_red);
+    $red = trim($red);
+    return $red;
+}
+
+function izlistaj_sve_postove() {
+    $blog_podaci = ocitaj_posts_text_file();
+    $blog_podaci = normalizacija_blog_podataka($blog_podaci);
+    //debagovanje($blog_podaci);
+    return $blog_podaci;
+}
